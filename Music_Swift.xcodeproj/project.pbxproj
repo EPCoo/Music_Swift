@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		24658D341D93CA2500D09BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24658D331D93CA2500D09BFB /* AppDelegate.swift */; };
-		24658D361D93CA2500D09BFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24658D351D93CA2500D09BFB /* ViewController.swift */; };
-		24658D391D93CA2500D09BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24658D371D93CA2500D09BFB /* Main.storyboard */; };
 		24658D3B1D93CA2500D09BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24658D3A1D93CA2500D09BFB /* Assets.xcassets */; };
 		24658D3E1D93CA2500D09BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24658D3C1D93CA2500D09BFB /* LaunchScreen.storyboard */; };
+		24658D481D93CBAC00D09BFB /* FYBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24658D471D93CBAC00D09BFB /* FYBarController.swift */; };
+		24658D4C1D93CDAD00D09BFB /* FYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24658D4B1D93CDAC00D09BFB /* FYMainViewController.swift */; };
+		24658D501D93CDD700D09BFB /* FYTuiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24658D4F1D93CDD700D09BFB /* FYTuiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24658D301D93CA2500D09BFB /* Music_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24658D331D93CA2500D09BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24658D351D93CA2500D09BFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		24658D381D93CA2500D09BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24658D3A1D93CA2500D09BFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24658D3D1D93CA2500D09BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24658D3F1D93CA2600D09BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24658D471D93CBAC00D09BFB /* FYBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYBarController.swift; sourceTree = "<group>"; };
+		24658D4B1D93CDAC00D09BFB /* FYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYMainViewController.swift; sourceTree = "<group>"; };
+		24658D4F1D93CDD700D09BFB /* FYTuiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYTuiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,63 @@
 		24658D321D93CA2500D09BFB /* Music_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				24658D4D1D93CDBC00D09BFB /* 推荐 */,
+				24658D491D93CD8900D09BFB /* 主页 */,
+				24658D451D93CB5900D09BFB /* 通用 */,
 				24658D331D93CA2500D09BFB /* AppDelegate.swift */,
-				24658D351D93CA2500D09BFB /* ViewController.swift */,
-				24658D371D93CA2500D09BFB /* Main.storyboard */,
 				24658D3A1D93CA2500D09BFB /* Assets.xcassets */,
 				24658D3C1D93CA2500D09BFB /* LaunchScreen.storyboard */,
 				24658D3F1D93CA2600D09BFB /* Info.plist */,
 			);
 			path = Music_Swift;
+			sourceTree = "<group>";
+		};
+		24658D451D93CB5900D09BFB /* 通用 */ = {
+			isa = PBXGroup;
+			children = (
+				24658D461D93CB6C00D09BFB /* Controller */,
+			);
+			name = "通用";
+			sourceTree = "<group>";
+		};
+		24658D461D93CB6C00D09BFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24658D471D93CBAC00D09BFB /* FYBarController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		24658D491D93CD8900D09BFB /* 主页 */ = {
+			isa = PBXGroup;
+			children = (
+				24658D4A1D93CD9200D09BFB /* Controller */,
+			);
+			name = "主页";
+			sourceTree = "<group>";
+		};
+		24658D4A1D93CD9200D09BFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24658D4B1D93CDAC00D09BFB /* FYMainViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		24658D4D1D93CDBC00D09BFB /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				24658D4E1D93CDC300D09BFB /* Controller */,
+			);
+			name = "推荐";
+			sourceTree = "<group>";
+		};
+		24658D4E1D93CDC300D09BFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24658D4F1D93CDD700D09BFB /* FYTuiViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +147,7 @@
 				TargetAttributes = {
 					24658D2F1D93CA2500D09BFB = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = H5YBBSJHKX;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,7 +177,6 @@
 			files = (
 				24658D3E1D93CA2500D09BFB /* LaunchScreen.storyboard in Resources */,
 				24658D3B1D93CA2500D09BFB /* Assets.xcassets in Resources */,
-				24658D391D93CA2500D09BFB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24658D361D93CA2500D09BFB /* ViewController.swift in Sources */,
+				24658D4C1D93CDAD00D09BFB /* FYMainViewController.swift in Sources */,
+				24658D501D93CDD700D09BFB /* FYTuiViewController.swift in Sources */,
 				24658D341D93CA2500D09BFB /* AppDelegate.swift in Sources */,
+				24658D481D93CBAC00D09BFB /* FYBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		24658D371D93CA2500D09BFB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				24658D381D93CA2500D09BFB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		24658D3C1D93CA2500D09BFB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -258,7 +303,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H5YBBSJHKX;
 				INFOPLIST_FILE = Music_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ws.Music-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,7 +317,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H5YBBSJHKX;
 				INFOPLIST_FILE = Music_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ws.Music-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
