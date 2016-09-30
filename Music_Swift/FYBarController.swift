@@ -18,11 +18,15 @@ class FYBarController: UITabBarController {
     
     private func initTabBarController() {
         let item0 = FYMainViewController()
-        self.addChildVC(VC: item0, title: "主页", image: "tab_icon_selection_normal", selectedImage: "tab_icon_selection_highlight")
+        addChildVC(VC: item0, title: "主页", image: "tab_icon_selection_normal", selectedImage: "tab_icon_selection_highlight")
         
         let item1 = FYTuiViewController()
+        addChildVC(VC: item1, title: "推荐", image: "icon_tab_shouye_normal", selectedImage: "icon_tab_shouye_highlight")
         
-        self.addChildVC(VC: item1, title: "推荐", image: "icon_tab_shouye_normal", selectedImage: "icon_tab_shouye_highlight")
+        let item2 = FYTuiViewController()
+        addChildVC(VC: item2, title: "", image: "", selectedImage: "")
+        
+        
         self.tabBar.backgroundColor = UIColor.white
         self.tabBar.barTintColor = UIColor.white
         self.tabBar.tintColor = UIColor.init(red: 252/255.0, green: 74/255.0, blue: 132/255.0, alpha: 0.9)
