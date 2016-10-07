@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2405DBDB1D93E6E20084F81C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405DBDA1D93E6E20084F81C /* Constants.swift */; };
 		2405DBDE1D9511C40084F81C /* FYNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2405DBDD1D9511C40084F81C /* FYNetManager.swift */; };
+		244CDF7D1DA7F90900AA4FF9 /* NSObject+ZZModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244CDF7C1DA7F90900AA4FF9 /* NSObject+ZZModel.swift */; };
 		24658D341D93CA2500D09BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24658D331D93CA2500D09BFB /* AppDelegate.swift */; };
 		24658D3B1D93CA2500D09BFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24658D3A1D93CA2500D09BFB /* Assets.xcassets */; };
 		24658D3E1D93CA2500D09BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24658D3C1D93CA2500D09BFB /* LaunchScreen.storyboard */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		2405DBDA1D93E6E20084F81C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2405DBDD1D9511C40084F81C /* FYNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYNetManager.swift; sourceTree = "<group>"; };
+		244CDF7C1DA7F90900AA4FF9 /* NSObject+ZZModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ZZModel.swift"; sourceTree = "<group>"; };
 		24658D301D93CA2500D09BFB /* Music_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Music_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24658D331D93CA2500D09BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24658D3A1D93CA2500D09BFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 		24658D451D93CB5900D09BFB /* 通用 */ = {
 			isa = PBXGroup;
 			children = (
+				244CDF7C1DA7F90900AA4FF9 /* NSObject+ZZModel.swift */,
 				2405DBDD1D9511C40084F81C /* FYNetManager.swift */,
 				24658D461D93CB6C00D09BFB /* Controller */,
 			);
@@ -320,6 +323,7 @@
 				24658D341D93CA2500D09BFB /* AppDelegate.swift in Sources */,
 				249B500B1D94208C0062AC1D /* FYTableViewCell.swift in Sources */,
 				249D18D91D9E3FAF00B5C9A1 /* ContentsModel.swift in Sources */,
+				244CDF7D1DA7F90900AA4FF9 /* NSObject+ZZModel.swift in Sources */,
 				249D18D71D9E3F9600B5C9A1 /* BaseModel.swift in Sources */,
 				24658D481D93CBAC00D09BFB /* FYBarController.swift in Sources */,
 			);
@@ -357,6 +361,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -406,6 +411,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -434,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E214713B675EF248B8A6F4B7 /* Pods-Music_Swift.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H5YBBSJHKX;
 				INFOPLIST_FILE = Music_Swift/Info.plist;
@@ -449,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F2E4A6BE920D65C0D9255734 /* Pods-Music_Swift.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H5YBBSJHKX;
 				INFOPLIST_FILE = Music_Swift/Info.plist;

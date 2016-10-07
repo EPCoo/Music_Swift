@@ -10,4 +10,16 @@ import UIKit
 
 class BaseModel: NSObject {
     
+    override init() {
+//        super.init()
+    }
+    
+    init(keyedValues: [String : Any]) {
+        super.init()
+        setValuesForKeys(keyedValues)
+    }
+    
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {
+        
+    }
 }
