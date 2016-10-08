@@ -73,6 +73,7 @@ class ContentCategorycontents : BaseModel {
 
 class CCategoryCotents_List : BaseModel {
     var title : String = ""
+    var moduleType : Int = 0
     var list : Array<CCategoryCotents_L_List> = Array()
     override func setValue(_ value: Any?, forKey key: String) {
         super.setValue(value, forKey: key)
@@ -81,6 +82,9 @@ class CCategoryCotents_List : BaseModel {
             let vaArr = value as! Array<[String : Any]>
             for listDict in vaArr {
                 let listObj = CCategoryCotents_L_List.init(keyedValues: listDict)
+                if self.moduleType == 2 {
+                    continue
+                }
                 arr.append(listObj)
             }
             self.list = arr
@@ -92,7 +96,7 @@ class CCategoryCotents_L_List : BaseModel {
     var top : Int = 0
     var subtitle : String = ""
     var period : Int = 0
-    var contentType : String = ""
+    var contentType : Int = 0
     var firstId : Int = 0
     var title : String = ""
     var key : String = ""

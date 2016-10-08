@@ -20,6 +20,7 @@
 		249B500C1D94208C0062AC1D /* FYTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249B500A1D94208C0062AC1D /* FYTableViewCell.xib */; };
 		249D18D71D9E3F9600B5C9A1 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249D18D61D9E3F9600B5C9A1 /* BaseModel.swift */; };
 		249D18D91D9E3FAF00B5C9A1 /* ContentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249D18D81D9E3FAF00B5C9A1 /* ContentsModel.swift */; };
+		249D18DB1DA89A8F00B5C9A1 /* FYMoreCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249D18DA1DA89A8F00B5C9A1 /* FYMoreCategoryCell.swift */; };
 		BF2B7616A2EF3415FCB14C41 /* Pods_Music_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CD9B559BE7DB2226CB39AC /* Pods_Music_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		249B500A1D94208C0062AC1D /* FYTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FYTableViewCell.xib; sourceTree = "<group>"; };
 		249D18D61D9E3F9600B5C9A1 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		249D18D81D9E3FAF00B5C9A1 /* ContentsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsModel.swift; sourceTree = "<group>"; };
+		249D18DA1DA89A8F00B5C9A1 /* FYMoreCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FYMoreCategoryCell.swift; sourceTree = "<group>"; };
 		56CD9B559BE7DB2226CB39AC /* Pods_Music_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Music_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E214713B675EF248B8A6F4B7 /* Pods-Music_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Music_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Music_Swift/Pods-Music_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		F2E4A6BE920D65C0D9255734 /* Pods-Music_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Music_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Music_Swift/Pods-Music_Swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		245187BB1D9BBC570073046F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				249D18DA1DA89A8F00B5C9A1 /* FYMoreCategoryCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				249D18D91D9E3FAF00B5C9A1 /* ContentsModel.swift in Sources */,
 				244CDF7D1DA7F90900AA4FF9 /* NSObject+ZZModel.swift in Sources */,
 				249D18D71D9E3F9600B5C9A1 /* BaseModel.swift in Sources */,
+				249D18DB1DA89A8F00B5C9A1 /* FYMoreCategoryCell.swift in Sources */,
 				24658D481D93CBAC00D09BFB /* FYBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
