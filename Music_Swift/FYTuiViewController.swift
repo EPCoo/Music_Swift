@@ -45,6 +45,22 @@ class FYTuiViewController: UIViewController {
 
 extension FYTuiViewController:UITableViewDelegate,UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = FYTitleViewCell()
+        let title = self.contentsModel.categoryContents.list[section].title
+        let hasMore: Bool = self.contentsModel.categoryContents.list[section].hasMore
+        view.setData(title: title, hasMore: hasMore, titleTag: section)
+        return view
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
@@ -65,7 +81,7 @@ extension FYTuiViewController:UITableViewDelegate,UITableViewDataSource {
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
 }

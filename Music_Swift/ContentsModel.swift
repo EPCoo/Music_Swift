@@ -75,6 +75,13 @@ class CCategoryCotents_List : BaseModel {
     var title : String = ""
     var moduleType : Int = 0
     var list : Array<CCategoryCotents_L_List> = Array()
+    
+    var hasMore : Bool = false
+    var contentType : String = ""
+    var calcDimension : String = ""
+    var tagName : String = ""
+    
+    
     override func setValue(_ value: Any?, forKey key: String) {
         super.setValue(value, forKey: key)
         if key == "list" {

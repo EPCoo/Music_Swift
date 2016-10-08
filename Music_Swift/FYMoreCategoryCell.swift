@@ -63,7 +63,7 @@ class FYMoreCategoryCell: UITableViewCell {
             make.bottom.right.equalTo(-2);
         }
         return $0
-    }(UIImageView.init(image: UIImage.init(named: "launchImage")))
+    }(UIImageView())
     // 标题
     lazy var titleLb : UILabel = {
         self.contentView.addSubview($0)
