@@ -82,6 +82,14 @@ extension FYTuiViewController:UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let VC = FYSongViewController()
+        VC.albumId = self.contentsModel.categoryContents.list[indexPath.section].list[indexPath.row].albumId
+        VC.oTitle = self.contentsModel.categoryContents.list[indexPath.section].list[indexPath.row].title
+
+        self.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(VC, animated: true)
+        self.hidesBottomBarWhenPushed = false
     }
     
 }

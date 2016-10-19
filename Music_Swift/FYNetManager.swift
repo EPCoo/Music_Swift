@@ -11,11 +11,12 @@ import Alamofire
 import SwiftyJSON
 
 let kkURLPath = "http://mobile.ximalaya.com/mobile/discovery/v2/category/recommends?categoryId=2&contentType=album&device=ios&scale=2&version=4.3.26.2"
+let KURLSpecial = "http://mobile.ximalaya.com/m/subject_list"
 
-let kURLPath = "http://mobile.ximalaya.com/mobile/discovery/v2/category/recommends"
-let kURLVersion = "\"version\":\"4.3.26.2\""
-let kURLDevice = "\"device\":\"ios\""
-let KURLScale = "\"scale\":2"
+//let kURLPath = "http://mobile.ximalaya.com/mobile/discovery/v2/category/recommends"
+//let kURLVersion = "\"version\":\"4.3.26.2\""
+//let kURLDevice = "\"device\":\"ios\""
+//let KURLScale = "\"scale\":2"
 
 
 class FYNetManager: NSObject {
@@ -34,8 +35,8 @@ class FYNetManager: NSObject {
             }
         })
     }
-    
-    func getContents(completionHandle: @escaping (ContentsModel?,NSError?)->Void) {
+    /// 获取推荐内容
+    func getContents(completionHandle : @escaping (ContentsModel?,NSError?)->Void) {
         FYNetManager().GETReuest(kkURLPath) { (dict, error) in
             if ((error) != nil) {
                 completionHandle(nil,error)
@@ -45,6 +46,29 @@ class FYNetManager: NSObject {
                 completionHandle(model,nil)
             }
         }
+    }
+    
+    /// 从网络上获取 选集信息  通过AlbumId, mainTitle, idAsc(是否升序)
+    func getTracksForAlbumId(
+        albumId : Int,
+        title : String,
+        isAsc : Bool,
+        completionHandle : @escaping (DestinationModel?,NSError?)->Void){
+        
+        let params = ["albumId":"\(albumId)","title":title,"isAsc":"\(isAsc)","device":"ios","position":"1"]
+        
+        let path = String.init(format: "http://mobile.ximalaya.com/mobile/others/ca/album/track/%d/true/1/20", albumId)
+        
+        FYNetManager().GETReuest(path, parameters: params) { (dict, error) in
+            if ((error) != nil) {
+                completionHandle(nil,error)
+            }else {
+                let model = DestinationModel(keyedValues: dict!)
+                
+                completionHandle(model,nil)
+            }
+        }
+
     }
     
 }
